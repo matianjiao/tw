@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>无标题文档</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<meta name="keywords" content="软件开发,工厂管理,商场管理,零售业管理,网站建设,系统集成">
+<meta name="description" content="网民互动是一家专业的企业软件开发公司,提供企业ERP,财务管理,物流管理等软件业务,广泛用于金融、制造、财务、流通等行业。">
+<!-- TemplateEndEditable -->
+<link href="../css_contet1.css"  rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!--顶部信息区，包含Logo和公司简介与联系方式-->
+    <div id="top-information">
+        <div id="logo"><img src="../images/139-150Z1145113.jpg" width="367" height="104" alt="网民互动 软件开发"></div>
+        <div id="top-information-home">
+            <a href="index.html">首页</a>
+            <br/>
+            <br/>
+            我们已经为全世界超过30家知名企业进行了软件订制开发！
+      </div>
+        <div id="top-information-phone">
+      电话：0755-0000000</div>
+</div>
+    <!--导航模板区-->
+    <div id="navplace">
+        <!-- TemplateBeginEditable name="navArea" -->导航区域<!-- TemplateEndEditable -->           
+    </div>
+    <!--主要内容区-->        
+    <div id="mastercontent">
+         <!-- TemplateBeginEditable name="contentarea" -->内容区域<!-- TemplateEndEditable -->
+</div>               
+    <!--页脚区-->
+    <div id="footer">
+        Copyright &copy; 2012 网民互动软件开发有限公司
+        <div>&nbsp;</div>
+    </div>
+    <div id="footer-sub">
+      <ul class="nav">
+        <li><a href="index.html">首页</a>|</li>
+        <li><a href="about-us.html">关于我们</a>|</li>
+        <li><a href="solutions.html">解决方案</a>|</li>
+        <li><a href="partners.html">合作伙伴</a>|</li>
+        <li><a href="consulting.html">咨询顾问</a>|</li>
+        <li><a href="contact-us.html">联系我们</a></li>
+      </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,735 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CONTENT CONTAINER - TWO COLUMN
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*2栏式容器布局样式*/
+#content-container-two-column {
+	margin-top:3px;
+	margin-left:auto;
+	margin-right:auto;              /*使容器水平居中显示*/
+	width:950px;                    /*容器的宽度为950px*/
+	border:1px solid #818181;       /*容器具有1px的边框*/
+	/*容器显示出分割背景图*/
+	background:url(images/bg-content-side.png) repeat-y right;
+	position:relative;              /*与其它页面主元素一样相对对齐方式*/
+	}
+/*左侧分栏*/
+#content-main-two-column {
+	width:80%;                     /*占用80%宽度*/
+	float:left;                    /*向左浮动*/
+	}
+
+#content-side-two-column {
+	float:right;                  /*向右浮动，占用17%的宽度*/
+	width:17%;
+	padding:10px;                 /*间隔区约占用3%的宽度*/
+	}
+	
+	
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CONTENT CONTAINER - THREE COLUMN
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*三栏式布局的容器面板*/
+#content-container-three-column {
+	margin-top:3px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:15px;
+	width:915px;
+	border:1px solid #818181;
+	position:relative;
+	}
+/*指定中间的div元素的宽度为560px，向左浮动，左外边距25px*/
+#content-main-three-column {
+	width:560px;
+	float:left;
+	margin-left:25px;
+	}
+/*指定居左和居右的div的宽度和字体大小*/
+#content-side2-three-column,
+#content-side1-three-column {
+	width:160px;
+	font-size:9pt;
+	}
+/*指定该div元素向右浮动*/	
+#content-side2-three-column {
+	float:right;
+	}
+/*向左浮动的div元素*/
+#content-side1-three-column {
+	float:left;
+	}
+	
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+   CONTACTS US 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/	
+/*表单容器的外观*/
+#contacts-form {
+	clear: right;             /*清除右浮动*/
+	width: 100%;              /*宽度*/
+	overflow: hidden;         /*溢出部分隐藏*/
+}
+#contacts-form fieldset {
+	border: none;
+	float: left;               /*向左浮动*/
+}
+#contacts-form .field {       /*表单字段的样式*/
+	clear: both; 
+	padding-bottom: 7px;
+	width: 100%;
+	overflow: hidden;
+}
+#contacts-form label {       /*表单标签的样式*/
+	float: left;
+	width: 79px;
+	color: #2cb6e9;
+	font-weight: bold;
+}
+#contacts-form input {        /*输入控件的样式*/
+	width: 240px;
+	padding: 2px 0 2px 3px;
+	border: 1px solid #d9d9d9;
+	background: none;
+}
+#contacts-form textarea {      /*多行文本框的样式*/
+	width: 790px;
+	height: 192px;
+	border: 1px solid #d9d9d9;
+	background: none;
+	padding: 2px 0 2px 3px;
+	margin-bottom: 15px;
+	overflow: auto;
+}
+#contacts-form .button {       /*链接的样式*/
+	width: 150px;
+	float: right;
+}
+.alignright {
+	text-align: right;
+}
+.aligncenter {
+	text-align: center;
+}
+	
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HOME PAGE - THREE COLUMN SECTION
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#three-column-container {	
+	padding:0;
+	margin:20px 0 10px 0;   /*指定三栏式容器的边界*/
+	}
+#three-column-side1 {
+	float:left;             /*第一列向左浮动*/
+	width:30%;              /*宽度占总宽度的30%*/
+	padding:10px;
+	}
+
+#three-column-side2 {
+	float:right;            /*第二列向右浮动*/
+	width:30%;              /*宽度占据总宽度的30%*/
+	padding:10px;	
+	}
+#three-column-middle {
+	width:30%;              /*中间列占据30%的剩余空间*/
+	margin:0px 32% 0px 35%;
+	padding:5px;	
+	}
+	
+	
+	
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+    
+    css-master
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HTML TAGS 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+body {
+	margin:0px;
+	background-color:#FFFFFF;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9pt;
+	line-height:1.9em;
+	color:#666666;
+}
+
+p {
+	margin:10px 0;
+	}
+
+p.no-padding-no-margin {
+	padding:0;
+	margin:0;
+	}
+	
+hr{
+	color: #E5E5E5;
+	background-color: #E5E5E5;
+	height: 1px;
+	border:0;
+	margin:15px 0;
+	_margin:10px 0;
+	}
+	
+blockquote {
+	padding:0 0 0 12px;
+	margin:12px 0 0 0;
+	background:url(../../images/bg-quote.png) no-repeat;
+	}
+
+blockquote p {
+	margin:2px 0;
+	}
+	
+cite {
+	font-size:.85em;
+	margin:0;
+	padding:0 0 0 6px;
+	}
+
+fieldset {
+	padding:15px;
+	}
+	
+legend {
+	color:#333333;
+	padding:5px 3px 10px 3px;	
+	}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HEADINGS 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+	
+h1, h2, h3, h4, h5, h6 {
+	font-size:1.8em;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	line-height:1.1em;
+	margin:5px 0;
+}
+
+h1 {
+	margin-bottom:0;
+}
+
+h1, h2 {
+	margin-top:0px;
+}
+
+h2 {
+	font-size:1.3em;
+}
+
+h3 {
+	font-size:1.1em;
+}
+
+h3.small {
+	font-size:1.2em;
+}
+
+h4 {
+	font-size:1.1em;
+}
+
+h5 {
+	font-size:1.1em;
+}
+
+h6 {
+	font-size:1em;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	LINKS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+a:link {
+	color:#d61719;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#980000;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+a:active {
+	color:#980000;
+}
+
+#content-side-two-column a:link,
+#content-side2-three-column a:link,
+#content-side1-three-column a:link,
+#content-side-two-column a:visited,
+#content-side2-three-column a:visited,
+#content-side1-three-column a:visited {
+	text-decoration:none;
+}
+
+#content-side-two-column a:hover,
+#content-side2-three-column a:hover,
+#content-side1-three-column a:hover {
+	text-decoration:underline;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	TOP INFORMATION
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*Logo区容器div的CSS样式*/
+#top-information {
+	height:112px;             /*容器高度*/
+	margin-left:auto;
+	margin-right:auto;        /*左右auto表示具中显示*/
+	margin-bottom:3px;        /*距离导航栏3px*/
+	color:#999999;
+	font-size:.85em;
+	position:relative;
+	width:950px;             /*宽度为950px*/
+	}
+/*放置Logo图像的div的显示样式*/	
+#logo {
+	position: absolute;     /*在Logo内部使用绝对对齐控制进行定位*/
+	top: 3px;
+	left: 16px;
+	height:30px;
+	padding: .1em 0 .2em 0;
+	font-variant: small-caps;
+	}
+/*Logo中的链接文本的显示样式*/
+#logo a {
+	color:#4A6BB3;
+	text-decoration:none;
+	}
+/*链接的首页的链接和文字的显示样式*/
+#top-information-home {
+	text-align:left;
+	border-bottom:1px dashed #CACACA;
+	position:absolute;
+	top:0;
+	right:25.5%;
+	height:2em;
+	width:20%;
+	font-size:9pt;
+	padding:0 1.5% 0 0;
+	}
+/*联系电话显示区的样式*/	
+#top-information-phone {
+	text-align:center;
+	border-left:1px dashed #CACACA;
+	position:absolute;
+	top:0;
+	left:75%;
+	font-size:9pt;	
+	height:100%;
+	padding:0 0 0 2%;
+	}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MAIN NAV 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*导航容器面板*/
+#nav-main {
+    margin:0px auto;      /*水平具中显示*/
+	width:950px;          /*宽度为950px*/
+	position:relative;	  /*相对定位方式*/
+}
+/*指定导航栏显示的背景图案*/
+#nav-box { 
+    background:url(images/nav-box-bg.gif) left top repeat-x; width:100%;
+}
+/*显示左侧的圆角背景图案*/
+#nav-box .left { 
+    background:url(images/nav-box-left.gif) no-repeat left top;
+}
+/*显示右侧的圆角背景图案*/
+#nav-box .right { 
+    background:url(images/nav-box-right.gif) no-repeat right top; height:47px;
+}
+/*导航样式定义*/
+#nav-box ul { 
+     font-family:Arial, Helvetica, sans-serif;
+}
+/*使用内联样式使其水平显示*/
+#nav-box ul li { 
+      display:inline;
+}
+/*指定导航链接的样式*/
+#nav-box ul li a { 
+     display:block;  /*链接用块显示方式*/
+	 float:left;     /*向左浮动*/
+	 color:#fff; 
+	 text-decoration:none; 
+}
+/*对于链接中的内容，应用左分隔符号*/
+#nav-box ul li a em { 
+      display:block; 
+	  float:left; 
+	  font-style:normal; 
+	  background:url(images/divider-left.gif) no-repeat left 10px;
+}
+/*对于链接中的b加粗标签，应用右分隔符号*/
+#nav-box ul li a em b { 
+      display:block; 
+	  float:left; 
+	  height:47px; 
+	  line-height:47px; 
+	  width:137px; 
+	  text-align:center; 
+	  background:url(images/divider-right.gif) no-repeat right 10px; 
+	  cursor:pointer;
+}
+/*下面的代码在鼠标经过链接时更改图像显示的样式*/
+#nav-box ul li a:hover { 
+      background:url(images/nav-act.gif) left top repeat-x;
+}
+#nav-box ul li a:hover em { 
+      background:url(images/divider-left-act.gif) no-repeat left 10px;
+}
+#nav-box ul li a:hover b { 
+      background:url(images/divider-right-act.gif) no-repeat right 10px;
+}
+/*在将CSS设为current时，使用高亮显示的背景图像*/
+#nav-box ul li a.current { 
+      background:url(images/nav-act.gif) left top repeat-x;
+}
+#nav-box ul li a.current em { 
+      background:url(images/divider-left-act.gif) no-repeat left 10px;
+}
+#nav-box ul li a.current b { 
+      background:url(images/divider-right-act.gif) no-repeat right 10px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	POSTER PHOTO
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*宣传容器div的样式*/
+#poster-photo-container {
+	margin-top:3px;
+	margin-left:auto;
+	margin-right:auto;     /*让容器水平居中对齐*/
+	width:950px;           /*指定宽度与导航和logo的div一样*/
+	background:#608fc8;
+	position:relative;     /*容器同样使用相对对齐方式*/
+	}	
+/*宣传图片的显示方式*/	
+.poster-photo-image {     
+	border-right:3px solid #FFF;
+	display:block;        /*块状显示方式*/
+	}
+/*宣传文字的显示方式*/	
+#feature-area-home {
+	position:absolute;     /*绝对定位方式*/
+	top:0;
+	right:0;
+	width:34%;             /*指定宣传文字的宽度*/
+	text-align:center;
+	padding:2%;
+	color:#FFFFFF;
+	font-size:15pt;        /*文字字体大小*/
+	font-weight:bold;
+	line-height:160%;
+	}
+
+#feature-area-home a:link,
+#feature-area-home a:visited {
+	color:#dcf2f7;
+	text-decoration:underline;
+	}
+	
+#feature-area-home a:hover {
+	text-decoration:none;
+	}
+	
+	
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	pagetitle
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#pagetitle {
+	margin-top:2px;                 /*顶部边距2px*/
+	margin-left:auto;
+	margin-right:auto;              /*水平居中显示*/
+	width:915px;                    /*宽度915px*/
+	background:#608fc8;
+	position:relative;              /*相对对齐方式*/
+	color:#d5e8ff;
+	font-size: 15pt;
+	padding:.5em 15px .7em 15px;    /*内部间距定义*/
+	}
+
+#pagetitle a:link,
+#pagetitle a:visited {
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+#pagetitle a:hover{
+	color:#D4E7F8;
+	text-decoration:none;
+	}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	LISTS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#content-container-three-column ul {
+	margin:0;
+	padding:0;
+	}
+
+#content-container-three-column li {
+	list-style-image:url(images/arrow.gif);
+	background:url(images/list-bullet-02.gif) no-repeat 0 .8em;
+	padding:.2em 0 .2em 1em;
+	margin-left:0.4em;
+	font-size:9pt;
+	
+}
+
+
+
+#content-side1-three-column ul.list-of-links,
+#content-side2-three-column ul.list-of-links {
+	margin: 0 0 30px 0px;
+}
+/*列表样式，显示最部边框虚线，开成分隔效果*/
+ul.list-of-links {
+	border-bottom:1px dotted #B2B2B2;
+}
+/*在每个列表项上面显示边框虚线*/
+ul.list-of-links li{
+	border-top:1px dotted #B2B2B2;
+	list-style-image:url(images/list-bullet-01-link.gif);
+}
+
+ul.list-of-links li.current {
+	background-color:#E5E5E5;
+}
+
+
+ul.no-lines,
+ul.no-lines li {
+	border:none;
+	}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HOME PAGE FEATURE AREA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.feature-area {
+	background-color:#6799D1;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	IMAGES & PHOTOS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+img {
+	border:none;
+	}
+
+.photo-border {
+	border:1px solid #cecece;
+	padding:4px;
+	background:#d9d9d9 url(images/bg-photo.png) top repeat-x;
+	margin-bottom:5px;
+	display:block;
+}
+
+.photo-float-left {
+	float:left;
+	margin-right:10px;
+	}
+
+.image-border-none {
+	border:none;
+}
+
+/*容器区域的显示样式*/
+#mastercontent,#navplace{
+	margin:0px auto;     /*水平居中显示*/
+	width:950px;         /*宽度为950px*/
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	FOOTER
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*页脚版权信息区容器的div样式*/
+#footer {
+	/*显示背景图案*/
+	background:#608fc8 url(images/bg-nav.png) bottom left no-repeat;
+	margin-top:3px;
+	margin-left:auto;
+	margin-right:auto;                 /*使之居中显示*/
+	width:950px;                       /*div宽度*/
+	padding:.8em 0 1em 0px;
+	position:relative;
+	color:#a9c0db;
+	font-size:9pt;                     /*版权信息字体*/
+}
+/*版权区内嵌的div元素的显示样式*/
+#footer div {
+	background:#4b6cb5 url(images/bg-nav-side.png) bottom right no-repeat;
+	width:25%;
+	_width:25.5%;
+	position:absolute;
+	top:0;
+	right:0;
+	padding:.8em 0 1em 0;
+}
+/*页脚链接的样式*/
+#footer a:link,
+#footer a:visited {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#footer a:hover {
+	color:#D4E7F8;
+	text-decoration:none;
+}
+#footer a:active {
+	color:#FFFFFF;
+}
+/*页脚链接区容器的样式*/
+#footer-sub{
+	margin 0px auto;
+	width:950px;	
+}
+/*页脚链接区导航的ul和li的样式*/
+#footer-sub .nav { 
+    text-align:center; padding-bottom:30px;
+}
+#footer-sub .nav li { 
+    display:inline;
+	font-size:9pt;
+}
+/*导航链接的样式*/
+#footer-sub .nav li a { 
+    color:#000000; padding:0 20px 0 20px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	FOOTER-SUB
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#footer-sub {
+	margin-top:1em;
+	margin-left:auto;
+	margin-right:auto;
+	width:950px;
+	text-align:center;
+	padding:.1em 0 2em 0;
+	position:relative;
+	font-size:.8em;
+	color:#999999;
+	}
+
+#footer-sub ul {
+	margin:0;
+	padding:0;
+	}
+	
+#footer-sub li {
+	display:inline;
+	list-style:none;
+	padding:0 1em 0 0;
+	background:none;
+	}
+
+#footer-sub a:link,
+#footer-sub a:visited {
+	text-decoration:underline;
+	color:#999999;
+}
+
+#footer-sub a:hover {
+	color:#666666;
+	text-decoration:none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MISC CLASSES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.news-date {
+	font-size:0.9em;
+	font-style:italic;
+	color:#A4A4A4;
+}
+
+.arrow {
+	vertical-align:middle;
+	}
+
+input.button-big {
+	font-weight:bold;
+	padding:.7em 1.5em;
+	font-size:1.1em;
+	vertical-align:bottom;
+	}
+
+input.button-small {
+	font-weight:normal;
+	padding:.4em 1em;
+	font-size:.8em;
+	vertical-align:bottom;
+	}
+
+.clear {
+	clear:both;
+	}
+
+.none {
+    display:none;
+}
+
